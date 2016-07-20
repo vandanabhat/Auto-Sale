@@ -1,0 +1,48 @@
+.content{
+  width: 100%;
+  .contentHeader{
+    height: 40%;
+    .contentHeaderImage{
+      height: 80%;
+      section{
+        overflow: hidden;
+        position: absolute;
+        margin: 0 10%;
+        top: 24px;
+        h2{
+          width: 58%;
+        }
+      }
+    }
+    .selection{
+      margin: 0 10%;
+      height: 20%;
+      select{
+
+        &.dropdown{
+          //position: absolute;
+          z-index: 1000;
+          float: left;
+          min-width: 160px;
+          padding: 5px 10px;
+          margin: 2px 20px 0;
+          font-size: 14px;
+          text-align: left;
+          list-style: none;
+          background-color: #fff;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          width: 21%;
+          height: 41px;
+        }
+      }
+    }
+  }
+  .contentBody{
+    overflow-y: auto;
+    //margin: 0 7%;
+    height: 60%;
+  }
+}

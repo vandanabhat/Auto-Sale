@@ -1,0 +1,28 @@
+<div class="content" ng-controller="homeController">
+    <div class="contentHeader">
+        <div class="contentHeaderImage" style="background: url('../app/images/car2.jpg') center no-repeat;background-size: cover;">
+            <section>
+                <h2 class="">{{car.punchLine}}</h2>
+                <button class="btn btn-success btn-group-lg">GetStarted Now</button>
+            </section>
+        </div>
+        <div class="selection">
+            <select name="make"  ng-model="selectedCar.make" class="dropdown">
+                <option value="" class="dropdown-item">Make</option>
+                <option ng-repeat="option in carMake" value="{{option}}" class="dropdown-item">{{option}}</option>
+            </select>
+            <select name="model"  ng-model="selectedCar.model" class="dropdown">
+                <option value="" class="dropdown-item">Model</option>
+                <option ng-repeat="option in model" value="{{option}}" class="dropdown-item">{{option}}</option>
+            </select>
+            <select name="price"  ng-model="selectedCar.price" class="dropdown">
+                <option value="" class="dropdown-item">Price</option>
+                <option ng-repeat="option in price" value="{{option}}" class="dropdown-item">{{option}}</option>
+            </select>
+            <button class="btn btn-group-lg"> Find My dream Car</button>
+        </div>
+    </div>
+    <div class="contentBody">
+
+    </div>
+</div>

@@ -1,3 +1,21 @@
+@media (max-width: 766px) {
+  clear: both;
+  .panel span.search {
+    display: none;
+  }
+  .navbar-collapse.collapse {
+    background: #2c3e50;
+    width: 80%;
+    margin-top: 0;
+  }
+  .navbar-collapse.collapse ul li a {
+    background: #2c3e50;
+    z-index: 101;
+  }
+  .content .contentHeader section h2 {
+    width: 100% !important;
+  }
+}
 html,
 body,
 .wrapper {
