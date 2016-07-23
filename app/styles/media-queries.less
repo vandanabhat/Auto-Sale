@@ -1,0 +1,172 @@
+@media (max-width: 766px) {
+.wrapper {
+  nav.panel {
+    span.search {
+      button {
+        float: none !important;
+      }
+    }
+    .navbar-collapse.collapse {
+      background: #2c3e50;
+      width: 40%;
+      margin-left: 55%;
+      margin-top: -2%;
+      ul {
+        li a {
+          background: #2c3e50;
+          z-index: 101;
+          padding-top: 18px;
+          padding-bottom: 18px;
+        }
+      }
+    }
+    div.searchDiv{
+      width: 32%;
+      top: -34px;
+      margin-left: 23%;
+      padding: 0;
+      z-index: 10;
+    }
+    #nav-menu {
+      clear: both !important;
+    }
+  }
+
+  .content {
+    .contentHeader {
+      section {
+        h2 {
+          width: 100% !important;
+        }
+      }
+      .selection {
+        .findCarButton{
+          font-size: 11px;
+        }
+        //display: none;
+      }
+    }
+    .contentBody {
+      .carImage {
+        > div {
+          //margin-right: 1%;
+          margin-bottom: 2%;
+        }
+        div.image, span.learnMore {
+          width: 150px !important;
+          height: 120px !important;
+
+        }
+      }
+    }
+  }
+}
+}
+@media (min-width: 767px) and (max-width: 960px) {
+  .content {
+    .contentHeader {
+      section {
+        h2 {
+        }
+      }
+      .selection {
+        //display: none;
+      }
+    }
+    .contentBody {
+      .carImage {
+        >div{
+          margin-right: 1%;
+        }
+        div.image {
+          //width: 30% !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1450px){
+  .contentHeader{
+    section{
+    }
+  .selection{
+    }
+  }
+  .contentBody{
+    .carDetailContainer{
+      max-width: 66%;
+      margin: 0px 22% !important;
+    }
+  }
+  .contentHeader section,.selection{
+    max-width: 66%;
+    margin: 0px 22.5% !important;
+  }
+}
+
+@media (max-height: 650px) {
+  //#wrapper {
+    .contentHeader {
+      .contentHeaderImage section {
+        top: 0 !important;
+        h2 {
+          font-size: 20px;
+        }
+      }
+      #selectCar {
+        .findCarButton {
+          padding: 0 12px;
+          font-size: 9px;
+        }
+        .dropdown {
+          height: auto;
+        }
+      }
+    }
+  //}
+}
+
+@media (max-height: 750px) and (max-width: 414px) {
+  #wrapper {
+    .searchDiv{
+      width: 33%;
+      top: -34px;
+      margin-left: 40%;
+      input[type=search]{
+        width: 75%;
+      }
+    }
+    .content #contentHeaderId {
+      .contentHeaderImage {
+        height: 100%;
+      }
+      #selectCar {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    #contentBodyId {
+      .carDetailContainer {
+        .carInfo, .carImage {
+          clear: both;
+          width: 100%;
+        }
+        div.image, span.learnMore {
+          width: 120px !important;
+          height: 110px !important;
+          margin-top: 3%;
+        }
+      }
+    }
+    .footer {
+      .logo {
+        display: none;
+      }
+      .footerCopyright {
+        float: none;
+        text-align: center;
+      }
+    }
+  }
+}
